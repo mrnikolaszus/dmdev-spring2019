@@ -17,7 +17,6 @@ import java.util.Optional;
 public class CompanyService {
     private final CrudRepository<Integer, Company> companyRepository;
     private final UserService userService;
-
     private final ApplicationEventPublisher eventPublisher;
 
 

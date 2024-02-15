@@ -24,6 +24,6 @@ public class ApplicationRunner {
         var definitionCount = context.getBeanDefinitionCount();
         System.out.println(definitionCount);
         System.out.println(context.getBean("pool1"));
-        System.out.println(context.getBean(DatabaseProperties.class));
+        System.out.println(context.getBean(CompanyService.class));
     }
 }

@@ -1,0 +1,5 @@
+db:
+  username: ${username.value:postgres}
+  password: Wcwcwc123
+
+#spring.profiles.act ive:qa
