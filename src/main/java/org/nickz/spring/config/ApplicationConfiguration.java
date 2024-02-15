@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
 //@ImportResource("classpath:application.xml")
 @Import(WebConfiguration.class)
 @Configuration(proxyBeanMethods = true)
-@PropertySource("classpath:application.properties")
 @ComponentScan(basePackages = "org.nickz.spring",
 useDefaultFilters = false,
 includeFilters = {

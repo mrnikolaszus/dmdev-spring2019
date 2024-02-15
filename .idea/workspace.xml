@@ -4,49 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79c1366d-4b91-4189-8cff-477fdcdd6c6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/ApplicationRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/bfpp/LogBeanFactoryPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/bfpp/VerifyPropertyBeanFactoryPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/bpp/Auditing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/bpp/AuditingBeanPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/bpp/InjectBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/bpp/InjectBeanPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/bpp/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/bpp/TransactionBeanPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/ApplicationConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/JpaConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/condition/JpaCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/entity/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/pool/ConnectionPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/CompanyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/CrudRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/dto/CompanyReadDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/ioc/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/listenter/entity/AccessType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/listenter/entity/EntityEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/listenter/entity/EntityListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/CompanyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/web/WebConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.xml" afterDir="false" />
+    <list default="true" id="79c1366d-4b91-4189-8cff-477fdcdd6c6f" name="Changes" comment="Spring Core">
+      <change afterPath="$PROJECT_DIR$/lombok.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/DatabaseProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-qa.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/ApplicationRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/ApplicationRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/ApplicationConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/JpaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/JpaConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/pool/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/pool/ConnectionPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/CompanyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/listenter/entity/EntityEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/listenter/entity/EntityEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +52,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="dmdev-spring2019" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dmdev-spring2019" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -115,6 +98,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -128,6 +115,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15826495",
     "project.structure.side.proportion": "0.14664805",
+    "settings.editor.selected.configurable": "spring.boot",
     "spring.configuration.checksum": "e8e9ff5322c56be0b6d34c055a1da2fc",
     "vue.rearranger.settings.migration": "true"
   },
@@ -145,12 +133,16 @@
       <recent name="org.nickz.spring.database.pool" />
       <recent name="org.nickz.spring.database.repository" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019" />
+      <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.nickz.spring.bpp" />
       <recent name="org.nickz.spring.bfpp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ApplicationRunner">
+  <component name="RunManager" selected="Spring Boot.ApplicationRunner">
     <configuration name="ApplicationRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.nickz.spring.ApplicationRunner" />
       <module name="dmdev-spring2019.main" />
@@ -208,8 +200,32 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
+    <configuration name="ApplicationRunner" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="dmdev-spring2019.main" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=qa" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.nickz.spring.ApplicationRunner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.nickz.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ApplicationRunner" />
+      <item itemvalue="Gradle.dmdev-spring2019 [build]" />
+      <item itemvalue="Gradle.dmdev-spring2019 [clean]" />
+      <item itemvalue="Spring Boot.ApplicationRunner" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ApplicationRunner" />
         <item itemvalue="Application.ApplicationRunner" />
         <item itemvalue="Gradle.dmdev-spring2019 [build]" />
         <item itemvalue="Gradle.dmdev-spring2019 [clean]" />
@@ -226,8 +242,16 @@
       <updated>1707824940407</updated>
       <workItem from="1707837394517" duration="10755000" />
       <workItem from="1707907374154" duration="19795000" />
-      <workItem from="1707988662459" duration="2616000" />
+      <workItem from="1707988662459" duration="12264000" />
     </task>
+    <task id="LOCAL-00001" summary="Spring Core">
+      <created>1707992232872</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707992232872</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,20 +268,19 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Spring Core" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Core" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/nickz/spring/ApplicationRunner.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.nickz.spring.database.repository.CompanyRepository" memberName="pools" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

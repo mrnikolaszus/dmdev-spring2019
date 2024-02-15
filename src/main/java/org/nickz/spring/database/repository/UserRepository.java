@@ -1,5 +1,6 @@
 package org.nickz.spring.database.repository;
 
+import lombok.RequiredArgsConstructor;
 import org.nickz.spring.database.pool.ConnectionPool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -10,13 +11,13 @@ import org.springframework.stereotype.Service;
 
 @Repository
 @Scope(BeanDefinition.SCOPE_PROTOTYPE)
+@RequiredArgsConstructor
 public class UserRepository {
 
 
+    @Qualifier("pool2")
     private final ConnectionPool connectionPool;
 
 
-    public UserRepository(@Qualifier("pool2") ConnectionPool connectionPool) {
-        this.connectionPool = connectionPool;
-    }
+
 }

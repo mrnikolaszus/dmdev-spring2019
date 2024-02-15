@@ -1,6 +1,7 @@
 package org.nickz.spring.database.repository;
 
 
+import lombok.extern.slf4j.Slf4j;
 import org.nickz.spring.bpp.Auditing;
 import org.nickz.spring.bpp.InjectBean;
 import org.nickz.spring.bpp.Transaction;
@@ -17,9 +18,11 @@ import javax.annotation.PostConstruct;
 import java.util.List;
 import java.util.Optional;
 
+@Slf4j
 @Scope(BeanDefinition.SCOPE_PROTOTYPE)
 @Transaction
 @Auditing
+
 public class CompanyRepository implements CrudRepository<Integer, Company> {
 
 
@@ -39,18 +42,18 @@ public class CompanyRepository implements CrudRepository<Integer, Company> {
 
     @PostConstruct
     private void init(){
-        System.err.println("init company repository");
+        log.error("init company repository");
     }
 
     @Override
     public Optional<Company> findById(Integer id) {
-        System.out.println("find by Id method");
+        log.error("find by Id method");
         return Optional.of(new Company(id));
     }
 
     @Override
     public void delete(Company entity) {
-        System.out.println("delete method");
+        log.error("delete method");
 
     }
 
