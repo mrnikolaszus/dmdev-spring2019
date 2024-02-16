@@ -1,10 +1,11 @@
-package integration.service.annotation;
+package org.nickz.spring.integration.annotation;
 
 
-import integration.service.TestApplicationRunner;
+import org.nickz.spring.TestApplicationRunner;
 import org.nickz.spring.ApplicationRunner;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -14,6 +15,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @ActiveProfiles("test")
+@Transactional
 @SpringBootTest(classes = {ApplicationRunner.class, TestApplicationRunner.class})
 public @interface IT {
 }

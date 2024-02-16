@@ -1,4 +1,4 @@
-package integration.service;
+package org.nickz.spring;
 
 import org.nickz.spring.database.pool.ConnectionPool;
 import org.springframework.boot.test.context.TestConfiguration;

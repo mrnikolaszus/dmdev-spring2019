@@ -1,15 +1,11 @@
-package integration.service;
+package org.nickz.spring.integration.service;
 
 
-import integration.service.annotation.IT;
+import org.nickz.spring.integration.annotation.IT;
 import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Test;
-import org.nickz.spring.ApplicationRunner;
 import org.nickz.spring.database.pool.ConnectionPool;
 import org.nickz.spring.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.SpyBean;
 import org.springframework.test.annotation.DirtiesContext;
 
 @IT

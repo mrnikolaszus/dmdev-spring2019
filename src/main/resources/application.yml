@@ -19,14 +19,27 @@ db:
     - size: 3
       timeout: 3
 
-
 logging:
-
   level:
-    root: WARN
+    root: INFO
     org.nickz.spring.database.pool: INFO
   file:
     name: nickz.log
     path: /
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: Wcwcwc123
+    url: jdbc:postgresql://localhost:5432/postgres
+
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        hbm2ddl:
+          auto: validate
 
 #spring.profiles.act ive:qa

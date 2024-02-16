@@ -4,18 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79c1366d-4b91-4189-8cff-477fdcdd6c6f" name="Changes" comment="SpringBootStarter">
-      <change afterPath="$PROJECT_DIR$/src/test/java/integration/service/CompanyServiceIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/integration/service/TestApplicationRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/integration/service/UserServiceIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/integration/service/annotation/IT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/service/CompanyServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/spring.properties" afterDir="false" />
+    <list default="true" id="79c1366d-4b91-4189-8cff-477fdcdd6c6f" name="Changes" comment="SpringTest">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/entity/Chat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/entity/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/entity/UserChat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/database/repository/CompanyRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/ApplicationRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/ApplicationRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/bpp/TransactionBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/bpp/TransactionBeanPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/entity/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/CompanyRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring-temp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/integration/service/CompanyServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/service/CompanyServiceIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/integration/service/TestApplicationRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/TestApplicationRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/integration/service/UserServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/service/UserServiceIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/integration/service/annotation/IT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/annotation/IT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/nickz/spring/service/CompanyServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/service/CompanyServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,9 +80,9 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -102,7 +113,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/MSIN/IdeaProjects/dmdev-spring2019/src/test/resources",
+    "last_opened_file_path": "C:/Users/MSIN/IdeaProjects/dmdev-spring2019/src/main/resources/sql",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,13 +133,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.nickz.spring.database.entity" />
       <recent name="org.nickz.spring.config.condition" />
       <recent name="org.nickz.spring.listenter.entity" />
       <recent name="org.nickz.spring.bpp" />
       <recent name="org.nickz.spring.database.pool" />
-      <recent name="org.nickz.spring.database.repository" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\resources\sql" />
       <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\test\resources" />
       <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019" />
       <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\resources" />
@@ -137,6 +149,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.nickz.spring.integration.database.repository" />
       <recent name="org.nickz.spring.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -144,8 +157,8 @@
       <recent name="org.nickz.spring.bfpp" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'integration.service'">
-    <configuration name="CompanyServiceIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CompanyRepositoryTest.findById">
+    <configuration name="CompanyRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -158,7 +171,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;integration.service.CompanyServiceIT&quot;" />
+            <option value="&quot;org.nickz.spring.integration.database.repository.CompanyRepositoryTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -169,7 +182,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="CompanyServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CompanyRepositoryTest.findById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -182,7 +195,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.nickz.spring.service.CompanyServiceTest&quot;" />
+            <option value="&quot;org.nickz.spring.integration.database.repository.CompanyRepositoryTest.findById&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -193,7 +206,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="CompanyServiceTest.findById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CompanyRepositoryTest.save" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -206,7 +219,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.nickz.spring.service.CompanyServiceTest.findById&quot;" />
+            <option value="&quot;org.nickz.spring.integration.database.repository.CompanyRepositoryTest.save&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -217,7 +230,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'integration.service'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CompanyServiceIT (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -230,7 +243,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;integration.service.*&quot;" />
+            <option value="&quot;org.nickz.spring.integration.service.CompanyServiceIT&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -259,19 +272,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.CompanyServiceIT" />
-      <item itemvalue="Gradle.CompanyServiceTest" />
-      <item itemvalue="Gradle.CompanyServiceTest.findById" />
-      <item itemvalue="Gradle.Tests in 'integration.service'" />
+      <item itemvalue="Gradle.CompanyRepositoryTest" />
+      <item itemvalue="Gradle.CompanyRepositoryTest.findById" />
+      <item itemvalue="Gradle.CompanyRepositoryTest.save" />
+      <item itemvalue="Gradle.CompanyServiceIT (1)" />
       <item itemvalue="Spring Boot.ApplicationRunner" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'integration.service'" />
-        <item itemvalue="Gradle.CompanyServiceIT" />
+        <item itemvalue="Gradle.CompanyRepositoryTest.findById" />
+        <item itemvalue="Gradle.CompanyServiceIT (1)" />
+        <item itemvalue="Gradle.CompanyRepositoryTest.save" />
+        <item itemvalue="Gradle.CompanyRepositoryTest" />
         <item itemvalue="Spring Boot.ApplicationRunner" />
-        <item itemvalue="Gradle.CompanyServiceTest.findById" />
-        <item itemvalue="Gradle.CompanyServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -285,7 +298,8 @@
       <updated>1707824940407</updated>
       <workItem from="1707837394517" duration="10755000" />
       <workItem from="1707907374154" duration="19795000" />
-      <workItem from="1707988662459" duration="18744000" />
+      <workItem from="1707988662459" duration="21266000" />
+      <workItem from="1708033826682" duration="7369000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Core">
       <created>1707992232872</created>
@@ -301,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708016853468</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="SpringTest">
+      <created>1708026118092</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708026118092</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +342,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Spring Core" />
     <MESSAGE value="SpringBootStarter" />
-    <option name="LAST_COMMIT_MESSAGE" value="SpringBootStarter" />
+    <MESSAGE value="SpringTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringTest" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
