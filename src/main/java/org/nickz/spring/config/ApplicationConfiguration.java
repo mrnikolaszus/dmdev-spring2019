@@ -1,12 +1,11 @@
 package org.nickz.spring.config;
 
 import org.nickz.spring.database.pool.ConnectionPool;
-import org.nickz.spring.database.repository.CrudRepository;
 import org.nickz.spring.database.repository.UserRepository;
 import org.nickz.web.WebConfiguration;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.*;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 
 //@ImportResource("classpath:application.xml")
@@ -33,13 +32,4 @@ public class ApplicationConfiguration {
     }
 
 
-    @Bean
-    @Profile("prod|web")
-    public UserRepository userRepository2(ConnectionPool pool2){
-        return new UserRepository(pool2);
-    }
-    @Bean
-    public UserRepository userRepository3(){
-        return new UserRepository(pool3());
-    }
 }

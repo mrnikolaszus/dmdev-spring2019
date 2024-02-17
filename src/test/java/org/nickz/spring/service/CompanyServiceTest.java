@@ -8,11 +8,10 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.nickz.spring.database.entity.Company;
-import org.nickz.spring.database.repository.CrudRepository;
+import org.nickz.spring.database.repository.CompanyRepository;
 import org.nickz.spring.dto.CompanyReadDTO;
 import org.nickz.spring.listenter.entity.EntityEvent;
 import org.springframework.context.ApplicationEventPublisher;
-import org.springframework.test.util.AssertionErrors;
 
 
 import java.util.Collections;
@@ -25,7 +24,7 @@ class CompanyServiceTest {
 
     public static final Integer COMPANY_ID =1;
     @Mock
-    private CrudRepository<Integer, Company> companyRepository;
+    private CompanyRepository companyRepository;
     @Mock
     private UserService userService;
     @Mock

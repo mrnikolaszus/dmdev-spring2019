@@ -4,7 +4,6 @@ import org.nickz.spring.config.ApplicationConfiguration;
 import org.nickz.spring.config.DatabaseProperties;
 import org.nickz.spring.database.pool.ConnectionPool;
 import org.nickz.spring.database.repository.CompanyRepository;
-import org.nickz.spring.database.repository.CrudRepository;
 import org.nickz.spring.database.repository.UserRepository;
 import org.nickz.spring.ioc.Container;
 import org.nickz.spring.service.CompanyService;

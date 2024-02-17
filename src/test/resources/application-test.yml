@@ -2,4 +2,9 @@ db:
   username: ${username.value:postgres}
   password: Wcwcwc123
 
+spring:
+  jpa:
+    properties.hibernate:
+      hbm2ddl.auto: update
+
 #spring.profiles.act ive:qa
