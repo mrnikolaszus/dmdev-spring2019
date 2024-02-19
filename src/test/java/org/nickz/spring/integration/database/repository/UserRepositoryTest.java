@@ -8,11 +8,13 @@ import org.nickz.spring.database.entity.User;
 import org.nickz.spring.database.repository.UserRepository;
 import org.nickz.spring.dto.PersonalInfo;
 import org.nickz.spring.dto.UserFilter;
+import org.nickz.spring.integration.IntegrationTestBase;
 import org.nickz.spring.integration.annotation.IT;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Slice;
 import org.springframework.data.domain.Sort;
 import org.springframework.test.annotation.Commit;
+import org.springframework.test.context.jdbc.Sql;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -21,14 +23,27 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-@IT
+
 @RequiredArgsConstructor
-class UserRepositoryTest {
+class UserRepositoryTest extends IntegrationTestBase {
 
     private final UserRepository userRepository;
 
     @Test
-    @Commit
+    void chickBatch(){
+        var users = userRepository.findAll();
+        userRepository.updateCompanyAndRole(users);
+        System.err.println(users);
+    }
+
+    @Test
+    void checkJdbcTemplate(){
+        var users = userRepository.findAllByCompanyIdAndRole(1, Role.USER);
+        org.assertj.core.api.Assertions.assertThat(users).hasSize(1);
+        System.err.println(users);
+    }
+
+    @Test
     void checkAuditing(){
         var ivan = userRepository.findById(1L).get();
         ivan.setBirthDate(ivan.getBirthDate().plusYears(1L));

@@ -3,8 +3,11 @@ db:
   password: Wcwcwc123
 
 spring:
+  datasource:
+    username: test
+    password: test
   jpa:
     properties.hibernate:
-      hbm2ddl.auto: update
+      hbm2ddl.auto: validate
 
 #spring.profiles.act ive:qa

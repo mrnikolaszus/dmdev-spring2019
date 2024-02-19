@@ -7,6 +7,7 @@ import org.nickz.spring.database.entity.Company;
 import org.nickz.spring.database.entity.User;
 import org.nickz.spring.database.repository.CompanyRepository;
 import org.nickz.spring.dto.UserFilter;
+import org.nickz.spring.integration.IntegrationTestBase;
 import org.nickz.spring.integration.annotation.IT;
 import org.springframework.test.annotation.Commit;
 import org.springframework.test.annotation.Rollback;
@@ -21,10 +22,10 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@IT
+
 @RequiredArgsConstructor
 
-class CompanyRepositoryTest {
+class CompanyRepositoryTest extends IntegrationTestBase {
 
     private static final Integer APPLE_ID = 4;
     private final EntityManager entityManager;

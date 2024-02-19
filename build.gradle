@@ -5,6 +5,7 @@ plugins {
     id 'com.ewerk.gradle.plugins.querydsl' version '1.0.10'
     id 'java'
 }
+apply from: 'version.gradle'
 
 group 'org.nickz'
 version '1.0-SNAPSHOT'
@@ -23,15 +24,17 @@ dependencies {
     implementation 'org.postgresql:postgresql'
     implementation 'org.springframework.data:spring-data-envers'
     implementation 'com.querydsl:querydsl-jpa'
+    implementation 'org.liquibase:liquibase-core'
 
     annotationProcessor 'com.querydsl:querydsl-apt'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation "org.testcontainers:postgresql:${versions.testcontainers}"
 }
 
 querydsl{
     jpa = true
-    library = 'com.querydsl:querydsl-apt:5.0.0'
+    library = "com.querydsl:querydsl-apt:${versions.querydsl}"
     querydslSourcesDir "$buildDir/generated/sources/annotationProcessor/java/main"
 
 }
