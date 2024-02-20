@@ -42,7 +42,7 @@ class CompanyServiceTest {
 
         Assertions.assertTrue(result.isPresent());
 
-        var expected = new CompanyReadDTO(COMPANY_ID);
+        var expected = new CompanyReadDTO(COMPANY_ID, null);
         result.ifPresent(actual -> assertEquals(expected, actual));
 
         Mockito.verify(eventPublisher).publishEvent(Mockito.any(EntityEvent.class));

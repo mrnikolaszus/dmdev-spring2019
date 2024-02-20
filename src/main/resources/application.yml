@@ -29,6 +29,12 @@ logging:
     path: /
 
 spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+    format:
+      date: iso
   datasource:
     driver-class-name: org.postgresql.Driver
     username: postgres
@@ -44,5 +50,6 @@ spring:
         format_sql: true
         hbm2ddl:
           auto: validate
+    open-in-view: false
 
 #spring.profiles.act ive:qa

@@ -4,22 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79c1366d-4b91-4189-8cff-477fdcdd6c6f" name="Changes" comment="JPARepo, Hibernate">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-1.0.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/IntegrationTestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/version.gradle" afterDir="false" />
+    <list default="true" id="79c1366d-4b91-4189-8cff-477fdcdd6c6f" name="Changes" comment="testBases&#10;liquibase">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/WebConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/dto/LoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/dto/UserCreateEditDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/dto/UserReadDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/mapper/CompanyReadMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/mapper/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/mapper/UserCreateEditMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/mapper/UserReadMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/greeting/bye.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/greeting/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/http/controller/UserControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/FilterUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/FilterUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/FilterUserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/FilterUserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/dto/CompanyReadDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/dto/CompanyReadDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/audit.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-2.1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sql/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-2.0.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/database/repository/CompanyRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/database/repository/CompanyRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/database/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/database/repository/UserRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-1.0.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-1.0.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/service/CompanyServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/service/CompanyServiceIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/service/UserServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/service/UserServiceIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/nickz/spring/service/CompanyServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/service/CompanyServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +78,9 @@
         <option value="spring-beans.schema" />
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="JUnit5 Test Class" />
+        <option value="HTML File" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -88,37 +99,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/MSIN/IdeaProjects/dmdev-spring2019/src/main/resources/db/changelog",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15826495",
-    "project.structure.side.proportion": "0.14664805",
-    "settings.editor.selected.configurable": "spring.boot",
-    "spring.configuration.checksum": "e8e9ff5322c56be0b6d34c055a1da2fc",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MSIN/IdeaProjects/dmdev-spring2019/src/main/webapp/WEB-INF/jsp/user&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15826495&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.14664805&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;spring.boot&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e8e9ff5322c56be0b6d34c055a1da2fc&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.nickz.spring.database.entity" />
@@ -128,16 +140,17 @@
       <recent name="org.nickz.spring.database.pool" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\webapp\WEB-INF\jsp\user" />
+      <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\webapp\WEB-INF\jsp\greeting" />
       <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\resources\db\changelog" />
       <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\test\resources" />
       <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\resources\sql" />
-      <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019" />
-      <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.nickz.spring.integration.http.controller" />
       <recent name="org.nickz.spring.integration.database.repository" />
       <recent name="org.nickz.spring.service" />
     </key>
@@ -146,7 +159,7 @@
       <recent name="org.nickz.spring.bfpp" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'org.nickz.spring.integration.database.repository'">
+  <component name="RunManager" selected="Gradle.UserControllerTest.create">
     <configuration name="Tests in 'org.nickz.spring.integration.database.repository'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -171,7 +184,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="UserRepositoryTest.checkAuditing" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserControllerTest.create" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -184,7 +197,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.nickz.spring.integration.database.repository.UserRepositoryTest.checkAuditing&quot;" />
+            <option value="&quot;org.nickz.spring.integration.http.controller.UserControllerTest.create&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -195,7 +208,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="UserRepositoryTest.checkJdbcTemplate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserControllerTest.findAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -208,7 +221,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.nickz.spring.integration.database.repository.UserRepositoryTest.checkJdbcTemplate&quot;" />
+            <option value="&quot;org.nickz.spring.integration.http.controller.UserControllerTest.findAll&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -219,7 +232,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="UserRepositoryTest.chickBatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserServiceIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -232,7 +245,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.nickz.spring.integration.database.repository.UserRepositoryTest.chickBatch&quot;" />
+            <option value="&quot;org.nickz.spring.integration.service.UserServiceIT&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -243,26 +256,28 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="dmdev-spring2019 [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserServiceIT.create" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="classes" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.nickz.spring.integration.service.UserServiceIT.create&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="ApplicationRunner" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -273,20 +288,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.UserControllerTest.create" />
+      <item itemvalue="Gradle.UserControllerTest.findAll" />
+      <item itemvalue="Gradle.UserServiceIT" />
+      <item itemvalue="Gradle.UserServiceIT.create" />
       <item itemvalue="Gradle.Tests in 'org.nickz.spring.integration.database.repository'" />
-      <item itemvalue="Gradle.UserRepositoryTest.checkAuditing" />
-      <item itemvalue="Gradle.UserRepositoryTest.checkJdbcTemplate" />
-      <item itemvalue="Gradle.UserRepositoryTest.chickBatch" />
-      <item itemvalue="Gradle.dmdev-spring2019 [classes]" />
       <item itemvalue="Spring Boot.ApplicationRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UserControllerTest.create" />
+        <item itemvalue="Gradle.UserControllerTest.findAll" />
+        <item itemvalue="Gradle.UserServiceIT" />
+        <item itemvalue="Gradle.UserServiceIT.create" />
         <item itemvalue="Gradle.Tests in 'org.nickz.spring.integration.database.repository'" />
-        <item itemvalue="Gradle.UserRepositoryTest.checkJdbcTemplate" />
-        <item itemvalue="Gradle.UserRepositoryTest.chickBatch" />
-        <item itemvalue="Gradle.dmdev-spring2019 [classes]" />
-        <item itemvalue="Gradle.UserRepositoryTest.checkAuditing" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +317,8 @@
       <workItem from="1707907374154" duration="19795000" />
       <workItem from="1707988662459" duration="21266000" />
       <workItem from="1708033826682" duration="8281000" />
-      <workItem from="1708159809420" duration="24252000" />
+      <workItem from="1708159809420" duration="33378000" />
+      <workItem from="1708426284138" duration="9043000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Core">
       <created>1707992232872</created>
@@ -339,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708207123652</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="testBases&#10;liquibase">
+      <created>1708360619873</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708360619873</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +385,8 @@
     <MESSAGE value="SpringTest" />
     <MESSAGE value="Transactional" />
     <MESSAGE value="JPARepo, Hibernate" />
-    <option name="LAST_COMMIT_MESSAGE" value="JPARepo, Hibernate" />
+    <MESSAGE value="testBases&#10;liquibase" />
+    <option name="LAST_COMMIT_MESSAGE" value="testBases&#10;liquibase" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -371,6 +395,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/database/repository/UserRepositoryTest.java</url>
           <line>65</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/LoginController.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
