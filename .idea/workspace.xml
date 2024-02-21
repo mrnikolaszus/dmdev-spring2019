@@ -4,25 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79c1366d-4b91-4189-8cff-477fdcdd6c6f" name="Changes" comment="Mvc controllers&#10;+ controller tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/dto/PageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-2.2.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/registration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="79c1366d-4b91-4189-8cff-477fdcdd6c6f" name="Changes" comment="filters&#10;pagination">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/validation/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/validation/group/CreateAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/validation/group/UpdateAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/validation/impl/UserInfoValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/error500.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/FilterUserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/FilterUserRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/DatabaseProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/DatabaseProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/dto/UserCreateEditDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/dto/UserCreateEditDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/CompanyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/greeting/bye.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting/bye.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/greeting/hello.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting/hello.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/registration.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +63,11 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Enum" />
-        <option value="AnnotationType" />
-        <option value="HTML File" />
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -114,7 +107,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15826495",
     "project.structure.side.proportion": "0.14664805",
-    "settings.editor.selected.configurable": "preferences.externalResources",
+    "settings.editor.selected.configurable": "spring.boot",
     "spring.configuration.checksum": "e8e9ff5322c56be0b6d34c055a1da2fc",
     "vue.rearranger.settings.migration": "true"
   },
@@ -126,11 +119,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.nickz.spring.validation.group" />
+      <recent name="org.nickz.spring.validation.impl" />
+      <recent name="org.nickz.spring.validation" />
       <recent name="org.nickz.spring.database.entity" />
       <recent name="org.nickz.spring.config.condition" />
-      <recent name="org.nickz.spring.listenter.entity" />
-      <recent name="org.nickz.spring.bpp" />
-      <recent name="org.nickz.spring.database.pool" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\resources\templates\user" />
@@ -152,6 +145,7 @@
       <recent name="org.nickz.spring.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.nickz.spring.validation.group" />
       <recent name="org.nickz.spring.bpp" />
       <recent name="org.nickz.spring.bfpp" />
     </key>
@@ -315,7 +309,7 @@
       <workItem from="1707988662459" duration="21266000" />
       <workItem from="1708033826682" duration="8281000" />
       <workItem from="1708159809420" duration="33378000" />
-      <workItem from="1708426284138" duration="25192000" />
+      <workItem from="1708426284138" duration="28594000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Core">
       <created>1707992232872</created>
@@ -366,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708444337138</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="filters&#10;pagination">
+      <created>1708536471533</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708536471533</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +392,8 @@
     <MESSAGE value="JPARepo, Hibernate" />
     <MESSAGE value="testBases&#10;liquibase" />
     <MESSAGE value="Mvc controllers&#10;+ controller tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mvc controllers&#10;+ controller tests" />
+    <MESSAGE value="filters&#10;pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="filters&#10;pagination" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
