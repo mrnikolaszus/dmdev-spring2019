@@ -31,7 +31,7 @@ public class GreetingController {
 //        request.getSession().setAttribute();  - session scope
 //        request.setAttribute();  - request scope
 //        modelAndView.setViewName("greeting/hello");
-//        model.addAttribute("user", new UserReadDto(1L, "Ivan"));
+        model.addAttribute("user", userReadDto);
 
         return "greeting/hello";
     }

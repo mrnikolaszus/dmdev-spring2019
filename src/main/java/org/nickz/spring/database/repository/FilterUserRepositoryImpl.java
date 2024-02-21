@@ -14,6 +14,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -56,31 +57,33 @@ public class FilterUserRepositoryImpl implements FilterUserRepository {
 
     @Override
     public List<User> findAllByFilter(UserFilter filter) {
-        var cb = entityManager.getCriteriaBuilder();
-        var criteria = cb.createQuery(User.class);
-
-        var user = criteria.from(User.class);
-        criteria.select(user);
-
+        CriteriaBuilder cb = entityManager.getCriteriaBuilder();
+        CriteriaQuery<User> criteria = cb.createQuery(User.class);
+        Root<User> user = criteria.from(User.class);
         List<Predicate> predicates = new ArrayList<>();
-        if (filter.firstname() != null) {
-            predicates.add(cb.like(user.get("firstname"), filter.firstname()));
+
+        // Фильтр по имени
+        if (filter.firstname() != null && !filter.firstname().isEmpty()) {
+            // Для примера, предположим, что filter.getFirstname() может содержать как полное имя, так и первую букву имени.
+            // Поиск по первой букве или части имени
+            String firstNamePattern = filter.firstname() + "%";
+            predicates.add(cb.like(cb.lower(user.get("firstname")), firstNamePattern.toLowerCase()));
         }
 
-        if (filter.firstname() != null) {
-            predicates.add(cb.like(user.get("lastname"), filter.lastname()));
+        // Фильтр по фамилии
+        if (filter.lastname() != null && !filter.lastname().isEmpty()) {
+            String lastNamePattern = filter.lastname() + "%";
+            predicates.add(cb.like(cb.lower(user.get("lastname")), lastNamePattern.toLowerCase()));
         }
 
-        if (filter.firstname() != null) {
-            predicates.add(cb.lessThan(user.get("birthDate"), filter.birthDate()));
+        // Фильтр по дате рождения
+        if (filter.birthDate() != null) {
+            predicates.add(cb.equal(user.get("birthDate"), filter.birthDate()));
         }
 
-        criteria.where(predicates.toArray(Predicate[]::new));
-
-
+        criteria.where(cb.and(predicates.toArray(new Predicate[0])));
         return entityManager.createQuery(criteria).getResultList();
     }
-
     @Override
     public List<PersonalInfo> findAllByCompanyIdAndRole(Integer companyId, Role role) {
         return jdbcTemplate.query(FIND_BY_COMPANY_AND_ROLE, (rs, rowNum) -> new PersonalInfo(

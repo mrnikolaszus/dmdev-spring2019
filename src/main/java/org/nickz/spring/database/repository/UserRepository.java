@@ -27,6 +27,7 @@ import java.util.Optional;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>,
+        JpaSpecificationExecutor,
         FilterUserRepository,
         RevisionRepository<User, Long, Integer> {
 
