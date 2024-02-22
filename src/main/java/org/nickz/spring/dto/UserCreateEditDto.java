@@ -7,6 +7,7 @@ import org.nickz.spring.validation.UserInfo;
 import org.nickz.spring.validation.group.CreateAction;
 import org.nickz.spring.validation.group.UpdateAction;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
@@ -32,5 +33,7 @@ public class UserCreateEditDto {
     Role role;
 
     Integer companyId;
+
+    MultipartFile image;
 
 }
