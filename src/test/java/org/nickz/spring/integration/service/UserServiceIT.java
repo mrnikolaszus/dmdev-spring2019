@@ -11,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Test;
 import org.nickz.spring.database.pool.ConnectionPool;
 import org.nickz.spring.service.UserService;
+import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.annotation.DirtiesContext;
 
 import java.time.LocalDate;
@@ -45,11 +46,13 @@ public class UserServiceIT extends IntegrationTestBase {
 
         UserCreateEditDto userDto = new UserCreateEditDto(
                 "test@gmail.com",
+                "test",
                 LocalDate.now(),
                 "test",
                 "test",
                 Role.ADMIN,
-                COMPANY_1
+                COMPANY_1,
+                new MockMultipartFile("test", new byte[0])
         );
 
         var actualResult = userService.create(userDto);
@@ -65,11 +68,13 @@ public class UserServiceIT extends IntegrationTestBase {
     void update(){
         UserCreateEditDto userDto = new UserCreateEditDto(
                 "test@gmail.com",
+                "test",
                 LocalDate.now(),
                 "test",
                 "test",
                 Role.ADMIN,
-                COMPANY_1
+                COMPANY_1,
+                new MockMultipartFile("test", new byte[0])
         );
 
         var actualResult = userService.update(USER_1, userDto);

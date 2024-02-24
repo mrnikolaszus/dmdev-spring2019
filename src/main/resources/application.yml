@@ -52,4 +52,25 @@ spring:
           auto: validate
     open-in-view: false
 
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 790469167980-lhleersdbcvknnmcud7t37ugirnpo6n0.apps.googleusercontent.com
+            clientSecret: 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
+            redirectUri: http://localhost:8080/login/oauth2/code/google
+            scope: openid,email,profile
+
+  messages:
+    basename: messages
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: 790469167980-lhleersdbcvknnmcud7t37ugirnpo6n0.apps.googleusercontent.com
+      client-secret: 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
+      scopes: openid,email,profile
+    oauth2-redirect-url: http://localhost:8080/swagger-ui/oauth2-redirect.html
+
 #spring.profiles.act ive:qa

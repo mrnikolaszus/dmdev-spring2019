@@ -16,6 +16,7 @@ import org.springframework.data.domain.Slice;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.*;
 import org.springframework.data.repository.history.RevisionRepository;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
@@ -67,4 +68,5 @@ public interface UserRepository extends JpaRepository<User, Long>,
            nativeQuery = true)
     List<PersonalInfo2> findAllByCompanyId(Integer companyId);
 
+    Optional<User> findByUsername(String username);
 }

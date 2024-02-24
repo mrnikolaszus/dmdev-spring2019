@@ -14,6 +14,11 @@ import org.nickz.spring.validation.group.UpdateAction;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.annotation.CurrentSecurityContext;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
@@ -48,7 +53,10 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public String findById(@PathVariable("id") Long id, Model model){
+    public String findById(@PathVariable("id") Long id,
+                           Model model,
+                           @CurrentSecurityContext SecurityContext securityContext,
+                           @AuthenticationPrincipal UserDetails userDetails){
 
         return userService.findById(id)
                 .map(user ->{
@@ -78,7 +86,8 @@ public class UserController {
             redirectAttributes.addFlashAttribute("errors", bindingResult.getAllErrors());
             return "redirect:/users/registration";
         }
-        return "redirect:/users/" + userService.create(user).getId();
+        userService.create(user);
+        return "redirect:/login";
 
     }
 
