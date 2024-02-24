@@ -4,33 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79c1366d-4b91-4189-8cff-477fdcdd6c6f" name="Changes" comment="REST">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/OpenApiConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/PasswordEncoderConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-4.0.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragment.html" afterDir="false" />
+    <list default="true" id="79c1366d-4b91-4189-8cff-477fdcdd6c6f" name="Changes" comment="Security&#10;Oauth2">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/rest/MessageRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_ru.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/AuditConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/AuditConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/database/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/dto/UserCreateEditDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/dto/UserCreateEditDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/handler/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/handler/ControllerExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/mapper/UserCreateEditMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/mapper/UserCreateEditMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/IntegrationTestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/IntegrationTestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/http/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/http/controller/UserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/service/UserServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nickz/spring/integration/service/UserServiceIT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,38 +87,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/MSIN/IdeaProjects/dmdev-spring2019/src/main/resources/templates&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15826495&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.14664805&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;spring.boot&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;e8e9ff5322c56be0b6d34c055a1da2fc&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/MSIN/IdeaProjects/dmdev-spring2019/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15826495",
+    "project.structure.side.proportion": "0.14664805",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "spring.configuration.checksum": "e8e9ff5322c56be0b6d34c055a1da2fc",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.nickz.spring.validation.group" />
@@ -146,11 +128,11 @@
       <recent name="org.nickz.spring.config.condition" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\resources" />
       <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\resources\templates" />
       <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\resources\db\changelog" />
       <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\resources\templates\user" />
       <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\webapp\WEB-INF\jsp\user" />
-      <recent name="C:\Users\MSIN\IdeaProjects\dmdev-spring2019\src\main\webapp\WEB-INF\jsp\greeting" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -333,7 +315,7 @@
       <workItem from="1708426284138" duration="33371000" />
       <workItem from="1708592409835" duration="22057000" />
       <workItem from="1708765281937" duration="1301000" />
-      <workItem from="1708773914186" duration="3070000" />
+      <workItem from="1708773914186" duration="4956000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Core">
       <created>1707992232872</created>
@@ -405,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708611913936</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Security&#10;Oauth2">
+      <created>1708781004705</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708781004705</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,7 +422,8 @@
     <MESSAGE value="filters&#10;pagination" />
     <MESSAGE value="validation and errors" />
     <MESSAGE value="REST" />
-    <option name="LAST_COMMIT_MESSAGE" value="REST" />
+    <MESSAGE value="Security&#10;Oauth2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Security&#10;Oauth2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
