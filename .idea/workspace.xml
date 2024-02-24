@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79c1366d-4b91-4189-8cff-477fdcdd6c6f" name="Changes" comment="Security&#10;Oauth2">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/http/controller/rest/MessageRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_ru.properties" afterDir="false" />
+    <list default="true" id="79c1366d-4b91-4189-8cff-477fdcdd6c6f" name="Changes" comment="ru/en languages test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/aop/CommonPointcuts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/aop/FirstAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/aop/SecondAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nickz/spring/config/WebConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +49,29 @@
                 <item name="dmdev-spring2019" type="f1a62948:ProjectNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
                 <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dmdev-spring2019" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:2.6.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dmdev-spring2019" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:2.6.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-aop:2.6.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dmdev-spring2019" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:2.6.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework:spring-aspects:5.3.14" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -315,7 +335,7 @@
       <workItem from="1708426284138" duration="33371000" />
       <workItem from="1708592409835" duration="22057000" />
       <workItem from="1708765281937" duration="1301000" />
-      <workItem from="1708773914186" duration="4956000" />
+      <workItem from="1708773914186" duration="12269000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Core">
       <created>1707992232872</created>
@@ -394,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708781004705</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ru/en languages test">
+      <created>1708783067502</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708783067502</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +450,8 @@
     <MESSAGE value="validation and errors" />
     <MESSAGE value="REST" />
     <MESSAGE value="Security&#10;Oauth2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Security&#10;Oauth2" />
+    <MESSAGE value="ru/en languages test" />
+    <option name="LAST_COMMIT_MESSAGE" value="ru/en languages test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
